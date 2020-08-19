@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <canvas #dataChart></canvas>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <h4>View data size</h4>
+      <mat-slider min="1" max="100" step="1" [value]="dataViewWindow" (input)="viewWindowSliderChanged($event)"></mat-slider>
+      <h4>vertical offset</h4>
+      <mat-slider min="1" max="100" step="1" (input)="verticalOffsetSliderChanged($event)"></mat-slider>
+      <h4>noise</h4>
+      <mat-slider min="1" max="100" step="1" (input)="noiseSliderChanged($event)"></mat-slider>
+      <h4>sample rate</h4>
+      <mat-slider min="50" max="1000" step="10" (input)="sampleTimeSliderChanged($event)"></mat-slider>
+    </div>
+  </div>
+</div>
